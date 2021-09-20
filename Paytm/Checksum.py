@@ -122,7 +122,7 @@ def __decode__(to_decode, iv, key):
 
 if __name__ == "__main__":
     params = {
-        "MID": "Sydgkg00038305629252",
+        "MID": "MERCHANT_ID",
         "ORDER_ID": "0001",
         "CUST_ID": "cust_id",
         "TXN_AMOUNT": "100",
@@ -132,7 +132,7 @@ if __name__ == "__main__":
     }
 
     print(verify_checksum(
-        params, 'EImRkUr9CGly9KXB',
+        params, 'MERCHANT_KEY',
         "CD5ndX8VVjlzjWbbYoAtKQIlvtXPypQYOg0Fi2AUYKXZA5XSHiRF0FDj7vQu66S8MHx9NaDZ/uYm3WBOWHf+sDQAmTyxqUipA7i1nILlxrk="))
 
     # print(generate_checksum(params, "xxxxxxxxxxxxxxxx"))
